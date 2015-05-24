@@ -40,10 +40,11 @@
 (fact :x :y)
 ;; Ah! I guess without the `=>` Midje just passes stuff on to be evaluated:
 (fact)
-(fact (println 1) (println 2))
-;; 1
-;; 2
-
+(comment
+  (fact (println 1) (println 2))
+  ;; 1
+  ;; 2
+  )
 ;;;; ___________________________________________________________________________
 ;;;; Future facts
 
